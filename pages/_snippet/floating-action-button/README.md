@@ -41,6 +41,3 @@ floating-action-buttonを置きたいhtmlにfloating-action-button.htmlの中身
 
 ## 5.動作イメージ
 
-https://hue.workslan/owncloud/index.php/apps/files/?dir=%2F1.HUE%2Fteam%2FSCM%2FProcurement%2FConcept%2Fsnippet_introduction#  
-floating-action-button.webm  
-をご覧ください。

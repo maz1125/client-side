@@ -93,6 +93,3 @@ this.approvalFlowDiagram_.changeCurrentStep(3);
 
 ## 5.画面イメージ
 
-https://hue.workslan/owncloud/index.php/apps/files/?dir=%2F1.HUE%2Fteam%2FSCM%2FProcurement%2FConcept%2Fsnippet_introduction#  
-approval-flow-diagram.png  
-をご覧ください。

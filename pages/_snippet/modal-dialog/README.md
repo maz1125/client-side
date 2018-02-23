@@ -90,7 +90,3 @@ Dialogを描画させたいEventで実行されるメソッド内で下記のよ
 
 
 ## 7.動作イメージ
-https://hue.workslan/owncloud/index.php/apps/files/?dir=%2F1.HUE%2Fteam%2FSCM%2FProcurement%2FConcept%2Fsnippet_introduction#
-modal-dialog.webm
-
-をご覧ください。
