@@ -1,0 +1,99 @@
+[
+  {
+    "id":"rowno",
+    "isId":true,
+    "field":"rowno",
+    "width":45,
+    "align":"center",
+    "focusable":false,
+    "formatter":[
+      "RowNumber"
+    ],
+    "cssClass":"text-light"
+  },{
+    "id":"name",
+    "field":"name",
+    "name":"品名",
+    "width":200,
+    "editor":"wap.fw.uiMock.input.TextInputSearch",
+    "editorOptions" : {
+      "typeaheadSettings" : {
+        "dropdownContainer" : "body"
+      }
+    },
+    "formatter":[
+      {"Placeholder":"品名、型番、分類"}
+    ]
+  },{
+    "id":"division",
+    "field":"division",
+    "name":"品目分類",
+    "width":200,
+    "editor":"wap.fw.uiMock.input.TextInputSearch",
+    "editorOptions" : {
+      "typeaheadSettings" : {
+        "dropdownContainer" : "body"
+      }
+    },
+    "formatter":[
+      {"Placeholder":"例）事務用品、PC部品"}
+    ]
+  },{
+    "id":"desired_quantity",
+    "field":"desired_quantity",
+    "name":"希望数量",
+    "width":100,
+    "align":"right",
+    "editor":"wap.fw.uiMock.input.NumericInput",
+    "formatter":[
+      "NumberRound",{"Placeholder":"0"}
+    ]
+  },{
+    "id":"unit",
+    "field":"unit",
+    "name":"単位",
+    "width":80,
+    "editor":"wap.fw.uiMock.input.TextInputSearch",
+    "editorOptions" : {
+      "typeaheadSettings" : {
+        "dropdownContainer" : "body"
+      }
+    },
+    "formatter":[
+      {"Placeholder":"例）個"}
+    ]    
+  },{
+    "id":"due_date",
+    "field":"due_date",
+    "name":"希望納期",
+    "width":160,
+    "editor":"wap.fw.ui.input.TextInput",
+    "editorOptions":{
+     
+    },
+    "formatter":[
+      {"Placeholder":"例）0901, 9/1"}
+    ]
+  },{
+    "id":"delivery_condition",
+    "field":"delivery_condition",
+    "name":"備考",
+    "width":410,
+    "editor":"wap.fw.ui.input.TextInput",
+    "formatter":[
+      {"Placeholder":"その他の記載事項はここに書いてください"}
+    ]
+  },{
+    "id":"switch",
+    "field":"switch",
+    "name":"代替品可",
+    "width":120,
+    "editor":"wap.fw.ui.SlickGrid.ToggleIcon",
+    "formatter":[{
+      "ToggleIcon":{
+          "off": {"value": 0, "icon": "toggle-icon-off"},
+          "on" : {"value": 1, "icon": "toggle-icon-on"}
+      }
+    }]
+  }
+]

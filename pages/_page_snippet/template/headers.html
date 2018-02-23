@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<div>
+	<div id="default-header">
+		<div class="title-area">
+			<div class="title">Portal Snippet<!-- 各ページのタイトルを記述 --></div>
+		</div>
+		<div class="header-left-area">
+<!-- 			★★★_snippet/global-search のソースが必要★★★　 -->
+<!-- 			<div class="global-search"> -->
+<!-- 				<button class="back-btn btn btn-default wap-icon-arrow-left">戻る</button> -->
+<!-- 				<div class="search-input-area"> -->
+<!-- 					<input class="search-input" type="text" placeholder="検索キーワードを入力してください　例) 申請書の種類、申請者、申請番号" /> -->
+<!-- 					<button class="wap-icon-search search-btn btn btn-primary"></button> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+		</div>
+		<div class="header-right-area"></div>
+	</div>
+
+	<div id="paging-header">
+		<div class="paging-header-left">
+			<button class="btn btn-default back-page-btn">
+				<span>一覧へ戻る</span>
+			</button>
+			{{#needPaging}}
+			<div class="counter-display">
+				<span class="count text-success font-size-xl">{{number}}</span><span>件
+					/ {{total}} 件</span>
+			</div>
+			<div class="paging-button">
+				<button class="btn btn-default prev-btn">
+					<i class="wap-icon-angle-left"></i>
+				</button>
+				<button class="btn btn-default next-btn">
+					<i class="wap-icon-angle-right"></i>
+				</button>
+			</div>
+			{{/needPaging}}
+		</div>
+		<div class="create-segment-button-entered btn-group">
+			<button type="button" class="btn btn-primary bg-color-primary" tabindex="-1">
+				<span>ボタン</span> <span class="record-count"></span>
+			</button>
+			<ul id="dropdown-menu" class="dropdown-menu filtering-items"
+				role="menu">
+				<li><a class="item-1" href="#">ドロップダウン１</a></li>
+				<li><a class="item-2" href="#">ドロップダウン２</a></li>
+			</ul>
+			<button type="button" class="btn btn-primary bg-color-primary" data-toggle="dropdown" tabindex="-1">
+				<i class="wap-icon-caret-down"></i>
+			</button>
+		</div>
+	</div>
+
+	<div id="input-header">
+		<div class="title-area">
+			<div class="title">Input Snippet<!-- 各ページのタイトルを記述 --></div>
+		</div>
+		<div class="input-header-left">
+			<div class="wap-stepNavi material-size hidden" data-position="1">
+				<div class="progress-indicator"></div>
+				<ul>
+					<li><a><span class="wap-step-navi-circle-size-m">1</span><label>入力</label></a></li>
+					<li><a><span class="wap-step-navi-circle-size-m">2</span><label>確認</label></a></li>
+					<li><a><span class="wap-step-navi-circle-size-m">3</span><label>完了</label></a></li>
+				</ul>
+			</div>
+			<button class="btn btn-primary confirm-btn input-phase">確認画面へ</button>
+			<button class="btn btn-default back-page-btn confirm-phase hidden"><i class="wap-icon-arrow-left"></i>戻る</button>
+			<button class="btn btn-primary finish-btn confirm-phase hidden">申請する</button>
+			<a class="finish-phase hidden" href="./portal-snippet.html"><button class="btn btn-default back-btn">ポータルに戻る</button></a>
+		</div>
+		<div class="input-header-right"></div>
+	</div>
+</div>

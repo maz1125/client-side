@@ -1,0 +1,7 @@
+{
+	"childBall":[
+		{"text":"新規作成","icon":"plus","id":"new-application-child-1","colorClass":"lightblue"},
+		{"text":"ファイル","icon":"file","id":"new-application-child-2","colorClass":"indigo"},
+		{"text":"ダウンロード","icon":"download","id":"new-application-child-3","colorClass":"green"}
+	] 
+}

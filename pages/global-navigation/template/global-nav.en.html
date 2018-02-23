@@ -1,0 +1,282 @@
+<!-- <meta charset="utf-8"> -->
+<link rel="stylesheet"
+	href="../global-navigation/css/global-navigation.css">
+<script src="../global-navigation/js/global-navi-side-menu.js"></script>
+<div class="navbar-inner">
+
+	<ul class="nav navbar-sidemenu-collapsed pull-left" style="display:none">
+		<!-- Search Bar -->
+		<li><a href="#" class="sidebar-collapse-icon with-animation"
+			data-close-others="true"> <i class="wap-icon-menulist"> </i></a></li>
+	</ul>
+
+	<!-- logo -->
+	<div class="navbar-brand-as-front" style="  margin-top: 2px;float: left;padding-left: 32px;">
+		<a class="nav-link"
+			onclick="if(!!window.top){window.top.location = '/company-hue-front/hue/home';}else{window.location = '/company-hue-front/hue/home';}">
+			<img src="../../common/images/logo/logo1.png" width="128" height="48px" alt="" />
+		</a>
+	</div>
+
+
+	<!-- main menu -->
+
+	<ul class="navbar-nav">
+		<!-- Search Bar -->
+		<li id="search" class="search-input-collapsed">
+			<!-- add class "search-input-collapsed" to auto collapse search input -->
+			<form method="get" action="">
+				<input type="text" name="q" class="search-input"
+					placeholder="Search in COMPANY" style="height: 48px" />
+				<button type="submit">
+					<i class="wap-icon-search"></i>
+				</button>
+			</form>
+		</li>
+	</ul>
+
+	<!-- notifications and other links -->
+	<ul class="nav navbar-right pull-right">
+		<li>
+			<ul class="user-info pull-left pull-none-xsm">
+				<!-- Profile Info -->
+				<li class="profile-info">
+					<!-- add class "pull-right" if you want to place this from right -->
+
+					<a href="#"> <img id="nav-user-img" src="" alt=""
+						class="img-circle" width="36" height="36">
+				</a>
+				</li>
+			</ul>
+		</li>
+
+		<li id="global-approval-task" class="dropdown hidden">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+				data-close-others="true">
+				<span class="nav-icon-task" style="display: inline-block;">
+					<i class="wap-icon-drawer"></i>
+				</span>
+				<span class="badge badge-secondary approval-task-badge">32</span>
+			</a> <!-- dropdown menu (messages) -->
+		</li>
+		<li id="global-notification" class="dropdown"><a href="#"
+			class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+			data-close-others="true"> <span class="nav-icon-bell"
+				style="display: inline-block;"><i class="wap-icon-bell"></i></span>
+				<span class="badge badge-secondary notification-badge">0</span>
+		</a> <!-- dropdown menu (messages) -->
+			<ul class="dropdown-menu">
+				<li class="top">
+					<p class="" style="height: 30px;padding: 7px 20px;">
+						<a href="#" class="pull-right mark-all-read">Mark all Read</a>
+						<!-- You have <strong class="new-cnt">0</strong> new notifications.  -->
+					</p>
+				</li>
+
+				<li>
+					<ul class="dropdown-menu-list scroller">
+						<li class="nothing-new">Nothing New</li>
+					</ul>
+				</li>
+				<li class="external">
+					<p>
+						<a href="#">View all notifications</a>
+						<a class="pull-right" href="#">View Timeline</a>
+						<!-- <a href="javascript:$('#new-notification-dialog').modal('show');$('body').append($('#new-notification-dialog'));" class="pull-right">Create New</a> -->
+					</p>
+
+				</li>
+			</ul>
+		</li>
+
+		<!-- Notification NewTask -->
+		<button id="popover-new-task"class="btn btn-default popover-default" data-toggle="popover" data-trigger="click" data-placement="bottom" data-original-title="鬯ｩ�ｽ･陝�雜｣�ｽｽ�ｽｦ遶丞｣ｺ�ｿｽ驢搾ｽｸ�ｽｺ鬯倡｢托ｽ｡蜥ｲ�ｽｹ�ｽｧ陝ｲ�ｽｨ隨ｳ�ｿｽ" data-content="髫ｴ�ｿｽ�ｽｽ�ｽｰ鬨ｾ�ｽｹ�ｿｽ�ｽｿ�ｽｽ驍ｵ�ｽｺ�ｿｽ�ｽｽ�ｽｮ驛｢�ｽｧ�ｿｽ�ｽｽ�ｽｿ驛｢�ｽｧ�ｿｽ�ｽｽ�ｽｹ驛｢�ｽｧ�ｿｽ�ｽｽ�ｽｯ驍ｵ�ｽｺ�ｿｽ�ｽｿ�ｽｽ1髣比ｼ夲ｽｽ�ｽｶ驍ｵ�ｽｺ郢ｧ�ｿｽ�ｿｽ�ｽｽ鬘費ｽｸ�ｽｺ�ｿｽ�ｽｽ�ｽｾ驍ｵ�ｽｺ�ｿｽ�ｽｿ�ｽｽ" style="position: absolute;top: 40px;right: 253px;opacity: 0;width: 0;height: 0;padding: 0;border: none;line-height: 0;"></button>
+
+
+		<li class="dropdown" style="display:none">
+			<a href="#" > <i class="wap-icon-bubbles"></i> <span class="badge badge-info chat-notifications-badge chat-hidden"></span> </a>
+		</li>
+
+        <li class="dropdown" style="display:none">
+            <a id="new-task" href="#"><i class="wap-icon-stack"></i></a>
+        </li>
+		<li class="sep" style="margin-left: 0px;height: 32px;margin-top: 8px;border-left: 1px solid #7f7f7f;"></li>
+
+		<li>
+			<a style="font-size: 1.7rem;line-height: 1;padding-right: 0px" id="logout-btn"
+ 			 onclick="if('9900' === HUE.UserData.get().loginId ||'8600' === HUE.UserData.get().loginId ||'8300' === HUE.UserData.get().loginId ||'8500' === HUE.UserData.get().loginId ||'8100' === HUE.UserData.get().loginId){if(!!window.top){window.top.location = '/company-hue-mock-front/pages/login/login.html';}else{window.location = '/company-hue-mock-front/pages/login/login.html';}}else if(!!window.top){window.top.location = '/company-hue-front/hue/logout';}else{window.location = '/company-hue-front/hue/logout';}"
+			 class="nav-link">
+				Logout <i class="wap-icon-logout"></i>
+		</a></li>
+
+		<!-- mobile only -->
+		<li class="visible-xs">
+			<!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+
+			<div class="horizontal-mobile-menu visible-xs">
+				<a href="#" class="with-animation"> <!-- add class "with-animation" to support animation -->
+					<i class="wap-icon-menulist"></i>
+				</a>
+			</div>
+
+		</li>
+	</ul>
+</div>
+
+
+<div class="modal fade" id="new-notification-dialog" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">新規メッセージを作成</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="field-1" class="control-label">宛先</label> <input type="text" class="form-control" id="field-1"
+                                                                           placeholder="受信者">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="field-2" class="control-label">種別</label> <select class="form-control" id="field-2">
+              <option value="1">タイプ 1</option>
+              <option value="2">タイプ 2</option>
+              <option value="3">タイプ 3</option>
+              <option value="4">タイプ 4</option>
+              <option value="5">タイプ 5</option>
+            </select>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="field-4" class="control-label">優先度</label> <select class="form-control" id="field-4">
+              <option value="0">低</option>
+              <option value="1">中</option>
+              <option value="2">高</option>
+            </select>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="field-3" class="control-label">件名</label> <input type="text" class="form-control"
+                                                                              id="field-3" placeholder="件名">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="form-group no-margin">
+              <label for="field-7" class="control-label">内容</label>
+
+              <textarea class="form-control autogrow" id="field-7" placeholder="内容"
+                        style="height: 100px; overflow: hidden; word-wrap: break-word; resize: horizontal;"></textarea>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"> 閉じる</button>
+        <button type="button" class="btn btn-info">送信</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="urgent-notification-dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Important Notification</h4>
+            </div>
+            <div id="urgent-notification-content" class="modal-body">Sample</div>
+            <div class="modal-footer">
+                <button id="btn-urgent-notification-ok" type="button" class="btn btn-default" data-dismiss="modal" onclick="">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="notification-action-template" type="text/template">
+
+	{{#notify}}
+	<li {{#id}}id="{{id}}"{{/id}}class="notify {{#middlePriority}}middle-priority{{/middlePriority}} {{#highPriority}}high-priority{{/highPriority}}">
+		<a href="#" onclick="{{link}}">
+			<span class="image pull-right">
+				{{#user}}
+				<img src="{{userimage}}" alt="" class="img-circle" width="44"/>
+				{{/user}}
+				{{#icon}}
+				<div class="icon img-circle alert-warning">
+					<i style="font-size: 17px;" class="color-alert {{iconclass}}"></i>
+				</div>
+				{{/icon}}
+			</span>
+
+			<span class="line">
+				<strong>{{username}}</strong>
+				- {{time}}
+			</span>
+
+			<span class="desc small">
+				{{text}}
+			</span>
+		</a>
+
+		{{#reply}}
+		<form role="form" class="form-horizontal" style="margin-bottom: 5px;">
+    		<div class="" data-controller="textField" data-field-id="sample1">
+      			<input type="text" class="form-control input-sm" placeholder="Reply" style="margin-left: 20px; width: 275px; display:inline-block">
+      			<button type="button" class="btn btn-default btn-sm" style="margin-right: 10px;">Reply</button>
+    		</div>
+		</form>
+		{{/reply}}
+		{{#actionButtons}}
+		<div style="text-align: right; margin-bottom: 5px; margin-right: 20px;">
+			{{#action}}
+			<button type="button" class="btn btn-default btn-sm">Accept</button>
+			<button type="button" class="btn btn-default btn-sm">Decline</button>
+			{{/action}}
+			{{#reminderLater}}
+			<div class="btn-group">
+				<button type="button" class="btn btn-sm dropdown-toggle"
+					data-toggle="dropdown-menu" href="javascript:;" onclick="$(this).parent().toggleClass('open');">
+						Reminder Later <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" style="width: 100px; background-color: #dddddd;">
+					<li><a href="#">5 Minutes</a></li>
+					<li><a href="#">10 Minutes</a></li>
+					<li><a href="#">30 Minutes</a></li>
+					<li><a href="#">1 Hour</a></li>
+					<li><a href="#">2 Hours</a></li>
+				</ul>
+			</div>
+			{{/reminderLater}}
+		</div>
+		{{/actionButtons}}
+		{{#html}}{{{html}}}{{/html}}
+	</li>
+	{{/notify}}
+
+</script>

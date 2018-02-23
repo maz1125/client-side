@@ -1,0 +1,31 @@
+.dialog-size-small{
+	width: 600px;
+}
+
+.dialog-size-middle{
+	width: 800px;
+}
+
+.dialog-size-large{
+	width: 1000px;
+}
+
+.dialog-size-xlarge{
+	width: 1200px;
+}
+
+.modal-dialog .modal-content{
+	margin-top: 120px;
+}
+
+.modal-dialog .dialog-header-label {
+    padding: 4px 8px 4px 14px;
+    margin-bottom: 16px;
+    height: 32px;
+    font-size: 1.7rem;
+    border-color: #4285f4;
+}
+
+.modal-dialog .dialog-header-cancel-icon{
+	margin-top: 8px;
+}

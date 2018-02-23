@@ -1,0 +1,59 @@
+.global-side-menu {
+	float: left;
+	height: 100%;
+	width: 6 * @size-base;
+	.display(flex);
+	.flex-direction(column);
+	.justify-content(center);
+	text-arign: center;
+	padding-left: 4 * @size-base;
+	&-toggle {
+		cursor: pointer;
+		color: @text-disabled;
+		font-size: @icon-font-size-l;
+	}
+}
+
+.display(...) {
+  @process_oldwebkit: ~`(function(e){return e="flex"==e||"inline-flex"==e?"-webkit-box":8121991})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process_moz: ~`(function(e){return e="flex"==e||"inline-flex"==e?"-moz-box":8121991})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process_webkit: ~`(function(e){return e="flex"==e||"inline-flex"==e?"-webkit-"+e:8121991})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process_ms: ~`(function(e){return e="flex"==e?"-ms-flexbox":"inline-flex"==e?"-ms-inline-flexbox":8121991})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process: ~`(function(e){return"flex"!=e&&"inline-flex"!=e&&(e=8121991),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  display: @process_oldwebkit;
+  display: @process_moz;
+  display: @process_webkit;
+  display: @process_ms;
+  display: @process;
+}
+
+.flex-direction(...) {
+  @process_oldestwebkit: ~`(function(e){return e="row"==e||"column"==e?"normal":"row-reverse"==e||"column-reverse"==e?"reverse":8121991})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process_oldermoz: ~`(function(e){return e="row"==e||"column"==e?"normal":"row-reverse"==e||"column-reverse"==e?"reverse":8121991})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process_olderwebkit: ~`(function(e){return e="row"==e||"row-reverse"==e?"horizontal":"column"==e||"column-reverse"==e?"vertical":8121991})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process_moz: ~`(function(e){return e="row"==e||"row-reverse"==e?"horizontal":"column"==e||"column-reverse"==e?"vertical":8121991})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process: ~`(function(e){return e=e||"row"})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-box-direction: @process_oldestwebkit;
+  -moz-box-direction: @process_oldermoz;
+  -webkit-box-orient: @process_olderwebkit;
+  -moz-box-orient: @process_moz;
+  -webkit-flex-direction: @process;
+  -ms-flex-direction: @process;
+  flex-direction: @process;
+}
+
+.justify-content(...) {
+  @process_oldestWebkit: ~`(function(e){return e=e||"start","flex-start"==e?e="start":"flex-end"==e?e="end":("space-between"==e||"space-around"==e)&&(e="justify"),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process_moz: ~`(function(e){return e=e||"start","flex-start"==e?e="start":"flex-end"==e?e="end":("space-between"==e||"space-around"==e)&&(e="justify"),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process_ms: ~`(function(e){return e=e||"start","flex-start"==e?e="start":"flex-end"==e?e="end":"space-between"==e?e="justify":"space-around"==e&&(e="distribute"),e})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  @process: ~`(function(e){return e=e||"flex-start"})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-box-pack: @process_oldestWebkit;
+  -moz-box-pack: @process_moz;
+  -ms-flex-pack: @process_ms;
+  -webkit-justify-content: @process;
+  justify-content: @process;
+}
+
+@size-base:         8px;
+@text-disabled:         #d0d0d0;
+@icon-font-size-l:  2.0rem;

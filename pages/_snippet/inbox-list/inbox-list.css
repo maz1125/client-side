@@ -1,0 +1,252 @@
+@charset "utf-8";
+.inbox-list {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.inbox-list.none-margin {
+  margin: 0;
+}
+.inbox-list-title {
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+  color: #555;
+}
+.inbox-list-title {
+  font-size: 1.7rem;
+  color: #555;
+  margin-bottom: 4px;
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.inbox-list-title i {
+  font-size: 2.0rem;
+  vertical-align: middle;
+}
+.inbox-list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inbox-list-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+.inbox-list-content-accordion {
+  display: flex;
+  font-size: 1.4rem;
+  color: #555;
+  padding: 8px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.inbox-list-content-accordion-text {
+  flex-grow: 1;
+}
+.inbox-list-content-accordion-icon {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.inbox-list-content-accordion:hover {
+  background-color: #ddd;
+}
+.inbox-list-content-accordion:hover .inbox-list-content-accordion-icon {
+  opacity: 1;
+}
+.inbox-list-content-summary-text {
+  display: flex;
+  font-size: 1.4rem;
+  color: #555;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+.inbox-list-content-list {
+  margin-bottom: 8px;
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  background-color: #ffffff;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  border: 0;
+  position: relative;
+}
+.inbox-list-content-list-row-header {
+  color: #7f7f7f;
+  height: 40px;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+.inbox-list-content-list-row {
+  height: 56px;
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid #e8e8e8;
+  align-items: center;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  line-height: 40px;
+}
+.inbox-list-content-list-row.active,
+.inbox-list-content-list-row:hover {
+  background-color: #f0f1f2;
+}
+
+.inbox-list-content-list-row .action-icons-column {
+  color: #aaa;
+  position: relative;
+  visibility: hidden;
+}
+.inbox-list-content-list-row.active .action-icons-column,
+.inbox-list-content-list-row:hover .action-icons-column {
+  visibility: visible;
+}
+.inbox-list-content-list-row.active .action-icons-column,
+.inbox-list-content-list-row .action-icons-column:hover {
+  color: #333;
+}
+.inbox-list-content-list-row .action-icons-column .wap-icon-ellipsis-v {
+  z-index: 1;
+  position: relative;
+  width: 32px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.7rem;
+  top: 2px;
+}
+.inbox-list-content-list-row .action-icons-column .background {
+  position: absolute;
+  border-radius: 48px;
+  background-clip: border-box;
+  background-clip: padding-box;
+  background-color: transparent;
+  transition: all 0.15s ease-in-out;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
+  left: 12px
+}
+.inbox-list-content-list-row .action-icons-column:hover .background,
+.inbox-list-content-list-row.active .action-icons-column .background {
+  background-color: #dadde0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+
+.inbox-list .action-menu{
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  background-clip: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 -2px 5px -2px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  display: none;
+  min-width: 160px;
+  padding: 4px 0;
+  background-clip: padding-box;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  top: 400px;
+  right: 480px;
+  display:none;
+}
+.inbox-list .action-menu:hover {
+	cursor:pointer;
+}
+.inbox-list .action-menu-item {
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.inbox-list .action-menu-item:hover {
+  background-color:#dddddd;
+}
+.padding-column {
+  flex-grow: 1;
+}
+.action-icons-column {
+  width: 40px;
+  padding: 0 4px;
+}
+
+.inbox-detail {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+  background-color: #fff;
+  margin: 0;
+  transition: all 0.15s ease;
+}
+.inbox-detail.open {
+  margin: 32px -20px;
+}
+.inbox-detail-title {
+  cursor: pointer;
+  padding: 4px 20px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  font-size: 120%;
+}
+.inbox-detail-title.fixed {
+  position: fixed;
+  top: 140px;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15), 0 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.inbox-divided-area {
+  padding: 16px;
+}
+.inbox-detail .divider{
+  margin: 0;
+}
+
+
+/* ***************************************************
+ * ここから下は、サンプルをきれいにみせるためのものなので、本来は不要。 
+ *************************************************** */
+.title-column {
+    width: 200px;
+    padding: 0 8px;
+}
+.amount-column {
+    width: 80px;
+    padding: 0 8px;
+}
+.img-column {
+    width: 60px;
+    padding: 0 8px;
+}
+.person-column {
+    width: 120px;
+    padding: 0 8px;
+}
+.inbox-list-content-list-row .amount-column {
+    text-align: right;
+}
+

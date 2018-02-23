@@ -1,0 +1,91 @@
+@charset "utf-8";
+.approval-flow-diagram {
+    display: flex;
+}
+
+.approval-flow-diagram .flow-node {
+    width: 256px;
+}
+
+.approval-flow-diagram .flow-node-header {
+    height: 32px;
+    width: 100%;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    transition: all .3s ease;
+}
+.approval-flow-diagram .flow-node:not(:last-child) .flow-node-header:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 16px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 16px solid #fff;
+    border-left-width: 6px;
+    border-left-style: solid;
+    border-left-color: transparent;
+    position: relative;
+    top: -32px;
+    left: 250px;
+    z-index: 3;
+}
+.approval-flow-diagram .flow-node:not(:first-child) .flow-node-header:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 6px solid #fff;
+    position: relative;
+    margin-top: -32px;
+    top: 32px;
+    left: 0;
+    z-index: 4;
+}
+.approval-flow-diagram .done .flow-node-header {
+    background-color: #e6e8ea;
+    border-color: #e6e8ea;
+    color: #aaa;
+    border-width: 0;
+    border-style: solid
+}
+.approval-flow-diagram .undergoing .flow-node-header {
+    background-color: #4285f4;
+    border-color: #4285f4;
+    color: #fff;
+    border-width: 0;
+    border-style: solid;
+}
+.approval-flow-diagram .coming .flow-node-header {
+    background-color: #e6e8ea;
+    border-color: #e6e8ea;
+    color: #333;
+    border-width: 0;
+    border-style: solid
+}
+
+.approval-flow-diagram .flow-node-content {
+    padding-left: 24px;
+}
+
+.approval-flow-diagram .flow-actor {
+    display: flex;
+    margin: 12px 0;
+}
+
+.approval-flow-diagram .flow-actor .img-48 {
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.approval-flow-diagram .flow-actor .actor-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

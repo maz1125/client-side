@@ -1,0 +1,33 @@
+{
+"baseInfo":{
+  "name":"綾野 将暉",
+  "birthplace":"京都府",
+  "birthday":"1985年11月19日",
+  "educationalBackground":"大阪芸術大学 芸術学部 卒業",
+  "blood":"O型"
+},
+"awardItems":[
+  {"caption":"2012年","value":"第17回読売演劇賞 最優秀男優賞"},
+  {"caption":"2014年","value":"第49回紀伊國屋演劇賞 個人賞"},
+  {"caption":"","value":"第37回日本アカデミー賞 優秀主演男優賞"}
+],
+"tvItems":[
+  {"caption":"2017年","value":"NHK 連続テレビ小説「ひよっこ」"},
+  {"caption":"","value":"YTV 「ドイツが愛した日本人」"},
+  {"caption":"2016年","value":"KTV 「僕のヤバイ妻」"},
+  {"caption":"","value":"YTV 「ぼくのいのち」"},
+  {"caption":"","value":"YTV 「怪盗山猫」"},
+  {"caption":"2015年","value":"ABC 「LIFE～夢のカタチ～」"},
+  {"caption":"2014年","value":"EX 「ゼロの真実～監察医・松本真央～」"},
+  {"caption":"","value":"CX 金曜プレステージ　塔馬教授の天才推理2「湯殿山麓ミイラ伝説殺人事件"},
+  {"caption":"","value":"CX 医龍4～Team Medical Dragon～"},
+  {"caption":"2013年","value":"CX 「救命病棟24時」 第5シリーズ"}
+],
+"stageItems":[
+  {"caption":"2016年","value":"「BENT」"},
+  {"caption":"","value":"「男たちの棲家～ドッコイ！俺たちはここに居る～」"},
+  {"caption":"2014年","value":"「ショーシャンクの空に」"},
+  {"caption":"","value":"「空ヲ刻ム者-若き仏師の物語-」"},
+  {"caption":"2013年","value":"「非常の人 何ぞ非常に」"}
+]
+}

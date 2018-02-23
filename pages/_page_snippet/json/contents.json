@@ -1,0 +1,7 @@
+{
+"message":"Hello World. This is Page Contents.",
+"listItems":[
+  {"caption":"えんぴつ","iconClass":"wap-icon-pencil"},
+  {"caption":"むしめがね","iconClass":"wap-icon-search"}
+]
+}

@@ -1,0 +1,117 @@
+@charset "utf-8";
+.talk-widget {
+    background-color: #fff;
+    width: 420px;
+}
+.talk-widget-conversation {
+    overflow-y: auto;
+    height: 560px;
+}
+.talk-empty-pict {
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 24px);
+    padding-top: 24px;
+}
+.day-talks {
+    padding: 16px 0;
+}
+.talk-date {
+	text-align: center;
+	font-weight: bold;
+}
+.unit-talk {
+    display: flex;
+    padding-top: 16px;
+}
+.unit-talk.me {
+    justify-content: flex-end;
+}
+.unit-talk .img-circle {
+    margin-top: 8px;
+    margin-left: 16px;
+}
+.talk-right {
+	display: inline-block;
+	max-width: 280px;
+	margin-left: 8px;
+}
+.speaker {
+    margin-left: 8px;
+}
+.talk-comment {
+    padding: 8px 16px;
+    border-radius: 17px;
+    position: relative;
+    min-width: 160px;
+}
+.me .talk-comment {
+    background-color: #ecf2fd;
+    margin-right: 8px;
+}
+.others .talk-comment {
+    background-color: #e8e8e8;
+    margin-left: 8px;
+}
+.comment-time {
+    text-align: right;
+    margin: 0 8px;
+    display: flex;
+    align-items: flex-end;
+}
+.talk-arrow {
+  display: inline-block;
+  top: 8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+}
+.me .talk-arrow {
+  border-left: 8px solid #ecf2fd;
+  left: 100%;
+}
+.others .talk-arrow {
+  border-right: 8px solid #e8e8e8;
+  right: 100%;
+}
+.read-count {
+    position: relative;
+    top: -12px;
+}
+.read-count.me {
+    text-align: right;
+    padding-right: 24px;
+}
+.read-count.other {
+    padding-left: 80px;
+}
+.talk-widget-input {
+    height: 64px;
+    padding: 16px 8px;
+    border-top: 1px solid #ddd;
+}
+.talk-widget-input .icon-size-24 {
+    line-height: 32px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.talk-widget-input .wap-icon-add{
+	color:#4285f4; 
+}
+.talk-widget-input .icon-size-24:hover {
+	color: #4285f4;
+}
+.talk-inputbox {
+    border: none;
+    border-bottom: 1px solid #4285f4;
+    width: 65%;
+    line-height: 32px;
+    margin: 0 8px;
+    padding: 0 4px;
+}

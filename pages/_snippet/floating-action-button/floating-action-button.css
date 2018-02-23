@@ -1,0 +1,245 @@
+@charset "utf-8";
+.floating-action-button {
+    position: fixed;
+    display: flex;
+    height: 456px;
+    right: 33px;
+    bottom: 20px;
+    align-items: flex-end;
+}
+
+.floating-action-button-report-area {
+    position: relative;
+}
+
+.floating-action-button-report-icon {
+    display: inline-block;
+    font-size: 1.7rem;
+    padding: 16px;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    background-color: #f44336;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.floating-action-button-report-icon:before {
+    transition: all 0.15s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.floating-action-button-text {
+	opacity: 0;
+    position: absolute;
+    width: 220px;
+    line-height: 56px;
+    text-align: end;
+    transition: all 0.15s ease-in-out;
+}
+
+.floating-action-button .child-text{
+	right: 48px;
+	top: -7px;
+}
+
+.floating-action-button .parent-text{
+    right: 56px;
+    top:0px;	
+}
+
+.floating-action-button-text-value {
+    font-size: 1.4rem;
+    background-color: #7f7f7f;
+    color: #fff;
+    display: inline-block;
+    line-height: 32px;
+    padding: 0 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.floating-action-button-text.opacity0 {
+    opacity: 0;
+}
+
+.floating-action-button-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.floating-action-button-contents {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+    margin-right: 8px;
+}
+
+.floating-action-button-content-icon {
+    display: inline-block;
+    font-size: 1.7rem;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #f44336;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.floating-action-button-content-icon.transport {
+    background-color: #009688;
+}
+
+.floating-action-button-content-icon.taxi {
+    background-color: #4caf50;
+}
+
+.floating-action-button-content-icon.domestic-trip {
+    background-color: #ff9800;
+}
+
+.floating-action-button-content-icon.overseas-trip {
+    background-color: #8bc34a;
+}
+
+.floating-action-button-content-icon.meating {
+    background-color: #3f51b5;
+}
+
+.floating-action-button-content-icon.suspense-payments {
+    background-color: #aaaaaa;
+}
+
+.floating-action-button-content-icon.bill {
+    background-color: #673ab7;
+}
+
+.floating-action-button-content-icon.arrow {
+    cursor: default;
+}
+
+.floating-action-button-content-icon.arrow:before {
+    transition: all 0.15s ease-in-out;
+}
+
+.floating-action-button-content-icon.other {
+    background-color: #2196f3;
+}
+
+.floating-action-button-content-parent {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.floating-action-button-anchor {
+    margin-left: 8px;
+}
+
+.floating-action-button:hover .floating-action-button-report-icon:before {
+    transform: rotate(360deg);
+}
+
+.floating-action-button .floating-action-button-report-icon.normal {
+    opacity: 1;
+    position:absolute;
+}
+.floating-action-button:hover .floating-action-button-report-icon.normal {
+    opacity: 0;
+}
+.floating-action-button .floating-action-button-report-icon.hovering {
+    opacity: 0;
+}
+.floating-action-button:hover .floating-action-button-report-icon.hovering {
+    opacity: 1;
+}
+
+.floating-action-button:hover .floating-action-button-contents {
+	height: 270px;
+    width: 220px;
+    opacity: 1;	
+}
+
+.floating-action-button-request-icon {
+    display: inline-block;
+    font-size: 1.7rem;
+    padding: 8px;
+    height: 40px;
+    line-height: 24px;
+    width: 40px;
+    border-radius: 50%;
+    background-clip: border-box;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 -4px 8px -4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.floating-action-button .child-ball {
+    margin-bottom: 4px;
+}
+
+.floating-action-button-anchor:hover .floating-action-button-text{
+	opacity:1;
+}
+
+
+/******** color ***********/
+.floating-action-button-request-icon.white {
+    background-color: #fff
+}
+
+.floating-action-button-request-icon.default {
+    background-color: #9299a0
+}
+
+.floating-action-button-request-icon.info {
+    background-color: #4285f4
+}
+
+.floating-action-button-request-icon.primary {
+    background-color: #4285f4
+}
+
+.floating-action-button-request-icon.success {
+    background-color: #00b19d
+}
+
+.floating-action-button-request-icon.warning {
+    background-color: #f4b142
+}
+
+.floating-action-button-request-icon.danger {
+    background-color: #e91e63
+}
+
+.floating-action-button-request-icon.indigo {
+    background-color: #5c6bc0
+}
+
+.floating-action-button-request-icon.green {
+    background-color: #66bb6a
+}
+
+.floating-action-button-request-icon.red {
+    background-color: #ef5350
+}
+
+.floating-action-button-request-icon.lightblue {
+    background-color: #29b6f6
+}
+
+.floating-action-button-request-icon.orange {
+    background-color: #ff7f3b
+}

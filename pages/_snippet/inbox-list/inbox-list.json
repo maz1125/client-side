@@ -1,0 +1,8 @@
+{
+  "inboxList":[
+    {"id":"1","title":"一行目","url":"../_snippet/inbox-list/inbox-list-expand-detail.html","amount":"¥ 1,700","imgPath":"../../common/images/user/4862.jpg","person":"上田 英二"},
+    {"id":"2","title":"二行目","url":"../_snippet/inbox-list/inbox-list-expand-detail.html","amount":"¥ 5,200","imgPath":"../../common/images/user/5349.jpg","person":"木下 順"},
+    {"id":"3","title":"三行目","url":"../_snippet/inbox-list/inbox-list-expand-detail.html","amount":"¥ 8,300","imgPath":"../../common/images/user/4842.jpg","person":"真下 健太"},
+    {"id":"4","title":"四行目","url":"../_snippet/inbox-list/inbox-list-expand-detail.html","amount":"¥ 6,100","imgPath":"../../common/images/user/5349.jpg","person":"木下 順"}
+  ]
+}

@@ -1,0 +1,58 @@
+{
+	"bookmark_data": [{
+		"title": "Employee Information Search",
+		"url": "../../pages/page/page.html#page=../../pages/ctm/search-main.html",
+		"icon": "wap-icon-user",
+		"description": "The Employee Information search by full-text search."
+	}, {
+		"title": "Attendance Report Gallery",
+		"url": "../../pages/csr-list/list-gallery.html",
+		"icon": "wap-icon-memo-text",
+		"description": "Aggregate query menu of attendance-related."
+	}, {
+		"title": "Customer Registration",
+		"url": "../../pages/customer-entry/entry-main.html",
+		"icon": "wap-icon-pencil",
+		"description": "Register a new customer."
+	}, {
+		"title": "Customer Bulk Import",
+		"url": "../../pages/customer-entry/entry-main.html?grid=true",
+		"icon": "wap-icon-download",
+		"description": "Bulk import of new customer."
+	}, {
+		"title": "Customer Input Box",
+		"url": "../../pages/customer-inputbox/inputbox-main.html",
+		"icon": "wap-icon-drawer",
+		"description": "Archive of customer information."
+	}, {
+		"title": "Approval",
+		"url": "../../pages/approval/list.html",
+		"icon": "wap-icon-leaf",
+		"description": "Approve the various application information."
+	}, {
+		"title": "Application",
+		"url": "../../pages/application/list.html",
+		"icon": "wap-icon-paper-plane",
+		"description": "Apply and search various applications."
+	}, {
+		"title": "Safety Confirmation",
+		"url": "../../pages/csr/safety-confirmation.html",
+		"icon": "wap-icon-location",
+		"description": "Confirmation about the safety of employees."
+	}, {
+		"title": "Purchase Order",
+		"url": "../../pages/purchase-entry/search-welcome.html",
+		"icon": "wap-icon-pencil",
+		"description": "Make a purchase request."
+	}, {
+		"title": "Purchase Bulk Import",
+		"url": "../../pages/purchase-entry-lump/entry-lump.html",
+		"icon": "wap-icon-pencil",
+		"description": "Make a purchase request."
+	}, {
+		"title": "Organization Editing",
+		"url": "../../pages/organization-edit/organization-edit.html",
+		"icon": "wap-icon-pencil",
+		"description": "Make a time plan and edit it."
+	}]
+}

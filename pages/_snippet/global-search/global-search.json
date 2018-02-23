@@ -1,0 +1,29 @@
+{
+"dictionary":[
+{"word":"経費","input":["けいひ","ｋ","けいｈ","keihi"]},
+{"word":"交通費精算","input":["こうつうひせいさん","ｋ","こうｔ","こうｔｓ","こうつうｈ","koutuhiseisan","koutsuhiseisan"]},
+{"word":"国内出張精算","input":["こくないしゅっちょうせいさん","ｋ","こｋ","こくｎ","こくないｓ","こくないｓｙ","こくないしゅｔｔｙ","こくないしゅｃｃｈ","kokunaisyuttyouseisan","kokunaisyucchyouseisan"]},
+{"word":"海外出張精算","input":["かいがいしゅっちょうせいさん","ｋ","かいｇ","かいがいｓｙ","かいがいしゅｔｔｙ","かいがいしゅｃｃｈ","kaigaisyuttyouseisan","kaigaisyucchyouseisan"]}
+],
+"searchResult":[
+{"text":"経費","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/expense.json"},
+{"text":"経費 交通費精算","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/transportation.json"},
+{"text":"経費 交通費精算 未承認","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/transportation_unapproved.json"},
+{"text":"経費 交通費精算 先月","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/transportation.json"},
+{"text":"経費 国内出張精算","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/domestic-biz-trip.json"},
+{"text":"経費 国内出張精算 未承認","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/domestic-biz-trip_unapproved.json"},
+{"text":"経費 国内出張精算 先月","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/domestic-biz-trip.json"},
+{"text":"経費 海外出張精算","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/overseas-biz-trip.json"},
+{"text":"経費 海外出張精算 未承認","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/overseas-biz-trip.json"},
+{"text":"経費 海外出張精算 先月","htmlPath":"template/globalsearch/approval.html"},
+{"text":"交通費精算","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/transportation.json"},
+{"text":"交通費精算 未承認","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/transportation_unapproved.json"},
+{"text":"交通費精算 先月","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/transportation.json"},
+{"text":"国内出張精算","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/domestic-biz-trip.json"},
+{"text":"国内出張精算 未承認","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/domestic-biz-trip_unapproved.json"},
+{"text":"国内出張精算 先月","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/domestic-biz-trip.json"},
+{"text":"海外出張精算","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/overseas-biz-trip.json"},
+{"text":"海外出張精算 未承認","htmlPath":"template/globalsearch/approval.html","jsonPath":"json/globalsearch/overseas-biz-trip.json"},
+{"text":"海外出張精算 先月","htmlPath":"template/globalsearch/approval.html"}
+]
+}

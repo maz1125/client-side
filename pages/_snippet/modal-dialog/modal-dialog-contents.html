@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<div>
+	<div class="dialog-contents-top">
+		<div class="modal-header">
+			<i class="wap-icon-cancel dialog-header-cancel-icon pull-right" data-dismiss="modal" aria-hidden="true"></i>
+			<div class="clearfix">
+				<div class="sh-title">
+					<div class="modal-title font-size-ll">{{dialogTitle}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-body">
+			<!-- HeaderLabelが不要であれば消してください -->
+			<div class="dialog-header-label">
+				<span class="header-label-value">{{headerLabel}}</span>
+			</div>
+			<div class="dialog-contents-body">
+				<!-- Dialogの中身をここに書く  -->
+			</div>					
+		</div>
+		<div class="modal-footer">
+			<button type="button" id="submit" class="btn btn-primary">{{primaryButtonLabel}}</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">{{defaultButtonLabel}}</button>
+		</div>
+	</div>
+</div>

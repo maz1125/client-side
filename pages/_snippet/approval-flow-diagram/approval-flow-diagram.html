@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+
+	<!-- ここから -->
+		<div class="approval-flow-diagram">
+			{{#approvalFlowDiagramModel}}
+			<div class="flow-node coming">
+				<div class="flow-node-header">{{stepCaption}}</div>
+				<div class="flow-node-content">
+					{{#actors}}
+					<div class="flow-actor">
+						<img class="img-48" src="{{actorImagePath}}">
+						<div class="actor-description"><div class="actor-name">{{actorName}}</div><div class="actor-role font-size-s {{roleColor}}">{{actorRole}}</div></div>
+					</div>
+					{{/actors}}
+				</div>
+			</div>
+			{{/approvalFlowDiagramModel}}
+		</div>
+	<!-- ここまで -->

@@ -1,0 +1,29 @@
+.global-side-menu {
+  float: left;
+  height: 100%;
+  width: 48px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-arign: center;
+  padding-left: 32px;
+}
+.global-side-menu-toggle {
+  cursor: pointer;
+  color: #d0d0d0;
+  font-size: 2rem;
+}

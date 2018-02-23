@@ -1,0 +1,40 @@
+{
+    "notify_cnt": 3,
+    "notify": [{
+        "id" : "default-03",
+        "link" : "window.open('../approval/list.html')",
+        "user" : true,
+        "username" : "Mizuki SUZUHARA",
+        "userimage" : "../../common/images/user/2608.jpg",
+        "icon" : false,
+        "iconclass" : "",
+        "text" : "Submitted 7 Applications.",
+        "publisher" : "<a href='#'>Mizuki SUZUHARA</a>（and 2 others） submitted 7 Applications.",
+        "time" : "1 hour before",
+        "new" : true
+      }, {
+        "id" : "default-02",
+        "link" : "location.href='../csr/attendance.html'",
+        "user" : false,
+        "username" : "SRE",
+        "userimage" : "",
+        "icon" : true,
+        "iconclass" : "wap-icon-location",
+        "text" : "Some members DON'T check-in the client office.",
+        "publisher" : "<a href='#'>Some members DON'T check-in the client office.</a>",
+        "time" : "2 hour before",
+        "new" : true
+      }, {
+        "id" : "default-01",
+        "link" : "window.open('../approval/list.html')",
+        "user" : true,
+        "username" : "Yuko TAKATSUKI",
+        "userimage" : "../../common/images/user/1052.jpg",
+        "icon" : false,
+        "iconclass" : "",
+        "text" : "Arrived comments about the applications of new clients register.",
+        "publisher" : "<a href='#'>Yuko TAKATSUKI</a> sent comments about the applications of <a href='#'>new clients register</a>",
+        "time" : "18:00 yesterday @ customer register func.",
+        "new" : true
+      }]
+}

@@ -1,0 +1,25 @@
+<div class="floating-action-button">
+	<div class="floating-action-button-icons">
+		<div class="floating-action-button-contents">
+			{{#childBall}}
+			<div id={{id}} class="floating-action-button-report-area floating-action-button-anchor child-ball">
+   				<a>
+  					<i class="wap-icon-{{icon}} {{colorClass}} floating-action-button-request-icon"></i>
+   				</a>
+				<div class="floating-action-button-text child-text">
+    				<span class="floating-action-button-text-value">{{text}}</span>
+    			</div>            				
+        	</div>        			
+   			{{/childBall}}
+		</div>
+		<div id={{mainBall.id}} class="floating-action-button-report-area floating-action-button-anchor estimate-curent-ball">
+			<a>
+				<i class="wap-icon-{{mainBall.icon}} floating-action-button-report-icon normal"></i>
+				<i class="wap-icon-{{mainBall.hoverIcon}} floating-action-button-report-icon hovering"></i>
+			</a>
+ 			<div class="floating-action-button-text parent-text">
+	   			<span class="floating-action-button-text-value">{{mainBall.text}}</span>
+    		</div>
+    	</div>
+	</div>
+</div>

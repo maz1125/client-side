@@ -1,0 +1,40 @@
+<ul id="main-menu" class="">
+	<li>
+		<a class="nav-link" onclick="if(!!window.top){window.top.location = '../../pages/home/home.html';}else{window.location = '../../pages/home/home.html';}"> <i class="wap-icon-home"></i> <span>Home</span> </a>
+	</li>
+	<li class="opened active">
+		<a href="../../pages/home/dashboard.html"> 
+			<i class="wap-icon-th-large"></i> <span>Bookmarks</span> 
+		</a>
+		<ul id="bookmark-list"></ul>
+		<ul>
+			<li>
+				<a href="../../pages/test-buttons/test-button-page.html"><span>Notification</span></a>
+			</li>
+		</ul>
+	</li>	
+	<li class="opened active">
+		<a href="#"> <i class="wap-icon-cog"></i> <span>Setting</span></a>
+		<ul>
+			<li>
+				<div style="float: left; margin-left: 40px; margin-top: 12px;">Font size</div>
+				<div class="btn-group btn-fontsize-grp" style="float: right; margin: 5px 10px;">
+					<button class="btn btn-fontsize-s" style="background: transparent; border-color: #555; padding: 3px 10px;">S</button>
+					<button class="btn btn-fontsize-m" style="border-color: #555; padding: 3px 10px; background: #222; box-shadow: 2px 2px 3px 1px #181818 inset;">M</button>
+					<button class="btn btn-fontsize-l" style="background: transparent; border-color: #555; padding: 3px 10px;">L</button>
+				</div>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#"> <i class="wap-icon-question-sign"></i> <span>Help</span></a>
+	</li>
+</ul>
+
+<script id="bookmark-list-template" type="text/template">
+	{{#bookmark_data}}
+	<li>
+		<a href="{{url}}"> <span>{{title}}</span> </a>
+	</li>
+	{{/bookmark_data}}
+</script>

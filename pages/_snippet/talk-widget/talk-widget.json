@@ -1,0 +1,45 @@
+{
+  "talks":[{
+    "date":"2016-12-19",
+    "contents":[
+      {"isMe":true,
+       "comment":"`talks`は初期状態で表示されるコメントたちです。`isMe`をtrueにすると、自分の投稿になります。"
+      }
+    ]
+  },{
+    "date":"2016-12-20",
+    "contents":[
+      {"isMe":false,
+       "name":"安住 昭信",
+       "img":"../../common/images/user/0782.jpg",
+       "comment":"`isMe`をfalseにすると、他の人の投稿になります。`name`と`img`の指定が必要です。"
+      }
+    ]
+  }],
+  "listeners":[{
+      "triggerLength": 2,
+      "delaySeconds": 5,
+      "content":{
+        "name":"藤井 淳",
+        "img":"../../common/images/user/10037.jpg",
+        "comment":"`listeners`は、他の人が新たにコメントを投稿したのを疑似的に再現するものです。表示されているコメント数が`triggerLength`以上になったら、`delaySeconds`秒後にコメントが投稿されます。"
+      }
+    },{
+      "triggerLength": 2,
+      "delaySeconds": 6,
+      "content":{
+        "name":"藤井 淳",
+        "img":"../../common/images/user/10037.jpg",
+        "comment":"`triggerLength`が5のデータも登録されているので、試しに1つコメントを投稿してみてください。あなたが投稿した3秒後に新しいコメントが投稿されます。"
+      }
+    },{
+      "triggerLength": 5,
+      "delaySeconds": 3,
+      "content":{
+        "name":"池内 善一",
+        "img":"../../common/images/user/10014.jpg",
+        "comment":"あなたの投稿により、このコメントが投稿されました。"
+      }
+    }
+  ]
+}

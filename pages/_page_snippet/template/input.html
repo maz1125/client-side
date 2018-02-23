@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+	<meta charset="utf-8">
+
+	<!-- メインコンテンツ -->
+	<div class="input-root contents-root">	
+		<div class="massage-information-panel info input-phase">
+			<i class="wap-icon-info wap-icon"></i>
+			<div class="message-information-text">
+				<span class="main-text">入力画面のサンプルページです</span>
+				<span class="sub-text">`massage-information-panel`クラスを持つ要素に`info`クラスを付けると、このようなメッセージのスタイルになります。</span>
+			</div>
+		</div>
+		<div class="massage-information-panel warning confirm-phase hidden">
+			<i class="wap-icon-warning wap-icon"></i>
+			<div class="message-information-text">
+				<span class="main-text">確認画面のページです</span>
+				<span class="sub-text">`warning`クラスを付けるとこのようなスタイルになります。</span>
+			</div>
+		</div>
+
+		<div class="page-content-panel confirm-phase hidden">
+			<div class="panel-area-segment">
+				<div class="panel-title-caption">承認フロー</div>
+<!-- 					★★★_snippet/approval-flow-diagram のソースが必要★★★　 -->
+<!-- 					<div class="approval-flow-diagram"> -->
+<!-- 						{{#approvalFlowDiagramModel}} -->
+<!-- 						<div class="flow-node coming"> -->
+<!-- 							<div class="flow-node-header">{{stepCaption}}</div> -->
+<!-- 							<div class="flow-node-content"> -->
+<!-- 								{{#actors}} -->
+<!-- 								<div class="flow-actor"> -->
+<!-- 									<img class="img-48" src="{{actorImagePath}}"> -->
+<!-- 									<div class="actor-description"><div class="actor-name">{{actorName}}</div><div class="actor-role font-size-s {{roleColor}}">{{actorRole}}</div></div> -->
+<!-- 								</div> -->
+<!-- 								{{/actors}} -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						{{/approvalFlowDiagramModel}} -->
+<!-- 					</div> -->
+			</div>
+		</div>
+
+		<div class="page-content-panel">
+			<div class="panel-area-segment">
+				<div class="panel-title-caption">基本情報</div>
+				<div class="input-form-row">
+					<div class="input-form-label">氏名</div>
+					<input class="input-form-value" value="{{baseInfo.name}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">出身地</div>
+					<input class="input-form-value" value="{{baseInfo.birthplace}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">生年月日</div>
+					<input class="input-form-value" value="{{baseInfo.birthday}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">最終学歴</div>
+					<input class="input-form-value size-l" value="{{baseInfo.educationalBackground}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">血液型</div>
+					<button class="input-form-value wap-single-select size-s" data-options="A型,B型,O型,AB型" data-default-value="{{baseInfo.blood}}"></button>
+				</div>
+			</div>
+			
+			<div class="panel-area-segment">
+				<div class="panel-title-caption">住所</div>
+				<div class="input-form-row">
+					<div class="input-form-label">郵便番号</div>
+					<input class="input-form-value" value="{{addressInfo.postcode}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">都道府県</div>
+					<button class="input-form-value wap-single-select" placeholder="都道府県を選択" data-options="北海道,青森県,岩手県,秋田県,宮城県,山形県,福島県"></button>
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">市区町村</div>
+					<input class="input-form-value" value="{{addressInfo.city}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">番地</div>
+					<input class="input-form-value" value="{{addressInfo.houseNo}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">マンション・部屋番号</div>
+					<input class="input-form-value" value="{{addressInfo.roomNo}}" />
+				</div>
+			</div>
+			
+			<div class="panel-area-segment">
+				<div class="panel-title-caption">連絡先</div>
+				<div class="input-form-row">
+					<div class="input-form-label">電話番号</div>
+					<input class="input-form-value" value="{{conntactInfo.telephone}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">携帯電話</div>
+					<input class="input-form-value" value="{{conntactInfo.cellphone}}" />
+				</div>
+				<div class="input-form-row">
+					<div class="input-form-label">メールアドレス</div>
+					<input class="input-form-value" value="{{conntactInfo.email}}" />
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="bottom-button-area">
+			<button class="btn btn-primary confirm-btn input-phase">確認画面へ</button>
+			<button class="btn btn-default back-page-btn confirm-phase hidden"><i class="wap-icon-arrow-left"></i>戻る</button>
+			<button class="btn btn-primary finish-btn confirm-phase hidden">申請する</button>
+		</div>
+
+	</div>
+	

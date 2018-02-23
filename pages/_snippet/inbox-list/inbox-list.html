@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+
+	<!-- ここから -->
+		<div class="inbox-list">
+			<div class="inbox-list-items">
+				<div class="inbox-list-title">
+					<div>
+						<span class="">InboxList</span>
+					</div>
+				</div>
+				<div class="inbox-list-tools">
+					<ul id="dropdown-menu" class="dropdown-menu filtering-items"
+						role="menu">
+						<li><a id="menu-item1" class="item-1" href="#">メニュー1</a></li>
+						<li><a id="menu-item2" class="item-1" href="#">メニュー2</a></li>
+					</ul>
+					<button type="button" class="btn btn-primary bg-color-primary dropdown-btn data-toggle="dropdown" tabindex="-1">
+						<span>ボタンメニュー</span>
+						<i class="wap-icon-caret-down"></i>
+					</button>
+				</div>	
+			</div>
+			<div class="inbox-list-content">
+			    <div class="inbox-list-content-list before-detail-part">
+			    	<!-- ヘッダー行です。不要な場合はこのノードを削除してOKです。 -->
+					<div class="inbox-list-content-list-row-header">
+						<div class="title-column">名称</div>
+						<div class="amount-column">金額</div>
+						<div class="img-column">担当者</div>
+						<div class="person-column"></div>
+						<div class="padding-column"></div>
+						<div class="action-icons-column"></div>
+					</div>
+					{{#inboxList}}
+					<div class="inbox-list-content-list-row" data-val="{{id}}" data-url="{{url}}">
+				    	<!-- 各列のテンプレートです。不要列を消したり、class属性などを変えてOKです。 -->
+						<div class="title-column"><span>{{title}}</span></div>
+						<div class="amount-column"><span>{{amount}}</span></div>
+						<div class="img-column"><img class="img-48 img-circle" src="{{imgPath}}"></div>
+						<div class="person-column"><span>{{person}}</span></div>
+						<div class="padding-column"></div>
+				    	<!-- action-icons-columnはアクションボタンを表示する部分です。ここを消すとアクションボタンが表示されなくなります。 -->
+						<div class="action-icons-column">
+							<div class="background"></div>
+							<i class="wap-icon-ellipsis-v"></i>
+						</div>
+					</div>
+					{{/inboxList}}
+				</div>
+				
+				<div class="inbox-list-content-list after-detail-part">
+				</div>
+			</div>
+			
+			<!-- action-icons-columnを押したときに表示されるアクションメニューです。 -->
+			<div class="action-menu">
+				<div id="action-menu-1" class="action-menu-item">
+					<span>Inboxアクション1</span>
+				</div>
+				<div id="action-menu-2" class="action-menu-item">
+					<span>Inboxアクション2</span>
+				</div>
+				<div id="action-menu-3" class="action-menu-item">
+					<span>Inboxアクション3</span>
+				</div>					
+				<div id="action-menu-4" class="action-menu-item">
+					<span>Inboxアクション4</span>
+				</div>
+				<div id="action-menu-5" class="action-menu-item">
+					<span>Inboxアクション5</span>
+				</div>
+			</div>
+		</div>
+	<!-- ここまで -->

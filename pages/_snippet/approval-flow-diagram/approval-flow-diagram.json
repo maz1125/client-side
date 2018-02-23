@@ -1,0 +1,7 @@
+{
+"approvalFlowDiagramModel":[
+{"stepCaption":"申請者","actors":[{"actorName":"斎藤 真緒","actorImagePath":"../../common/images/user/4734.jpg"}]},
+{"stepCaption":"所長","actors":[{"actorName":"二見 悠里","actorRole":"本承認者","roleColor":"text-light","actorImagePath":"../../common/images/user/10013.jpg"},{"actorName":"加藤 克実","actorRole":"代理承認者","roleColor":"text-success","actorImagePath":"../../common/images/user/1012.jpg"}]},
+{"stepCaption":"経理承認","actors":[{"actorName":"合田 桜子","actorRole":"本承認者","roleColor":"text-light","actorImagePath":"../../common/images/user/10063.jpg"}]}
+]
+}
