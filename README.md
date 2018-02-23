@@ -12,4 +12,4 @@ front-side-page-snippetは下記のsnippetを提供します。
 HTML,json,JavaScript,CSSで作られています。  
 
 ### 3.画面イメージ  
-https://user-images.githubusercontent.com/36439804/36589638-573ba582-18cf-11e8-9e23-163758b74a9a.gif
+![demo](https://user-images.githubusercontent.com/36439804/36589638-573ba582-18cf-11e8-9e23-163758b74a9a.gif)
