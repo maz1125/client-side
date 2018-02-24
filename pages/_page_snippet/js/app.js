@@ -8,7 +8,17 @@
     _buildPage : function() {
       // 何か要素を作ってappendしたり、モックに必要なオブジェクトをnewしたりといった類のことをここでします。
       // 状態はthisに持っておくことができます。ここでのthisはグローバルに公開されているappとイコールです。
-      
+
+      // user information of global-navigation
+      FRONTMOCK.UserData.set({
+        loginId : "3400",
+        role : "",
+        section : "横浜支店 建築部 第二建築課",
+        // userIconImg : "../../../common/images/user/4791.jpg",
+        username : "宮水 達也",
+        usernameEn : "Tatsuya Miyamizu"
+      });
+
       LazyLoad.addCallBack(function() {
         this.sideMenu_ = !!window.SideMenu ? new SideMenu() : null;
         
